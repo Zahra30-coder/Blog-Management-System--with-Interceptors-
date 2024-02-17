@@ -1,0 +1,28 @@
+<h1>Student List</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope='col'>#</th>
+      <th scope='col'>Name</th>
+      <th scope='col'>Designation</th>
+      <th scope='col'>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of items; let i = index">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ item.name }}</td>
+      <td>{{ item.designation }}</td>
+      <td>
+        <span (click)="deleteBlog(item.id)">DELETE</span>
+        &nbsp;
+        <a [routerLink]="['editBlog', item.Id]" class="btn btn-primary">
+          <i class="bi bi-pen-fill"></i>
+        </a>
+        
+      </td>
+    </tr>
+  </tbody>
+</table>
+

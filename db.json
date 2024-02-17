@@ -1,0 +1,24 @@
+{
+  "emps": [
+    {
+      "id": 1,
+      "name": "Elon Musk",
+      "designation": "json-server1"
+    },
+    {
+      "id": 2,
+      "name": "Jeff Bezos",
+      "designation": "json-server2"
+    },
+    {
+      "id": 3,
+      "name": "Mark Zuckerberg",
+      "designation": "json-server3"
+    },
+    {
+      "id": 4,
+      "name": "Bill Gates",
+      "designation": "json-server4"
+    }
+  ]
+}
